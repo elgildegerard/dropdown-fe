@@ -1,12 +1,14 @@
 $(document).ready(function(){
     
     // OCULTAMOS LISTA //
-    $("ul").hide(); //OPUESTO --> .show()//
+    
+    var ul = $("ul");
+    ul.hide(); //OPUESTO --> .show()//
     
     
     $(".flecha").click(function(e){
         e.preventDefault();
-        $("ul").slideToggle();    
+        ul.slideToggle();    
     });
     
     $(".select").prepend("<p>Prueba</p>");
