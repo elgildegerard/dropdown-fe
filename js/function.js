@@ -4,10 +4,14 @@ $(document).ready(function(){
     $("ul").hide(); //OPUESTO --> .show()//
     
     
-    $(".flecha").click(function(){
-        $("ul").slideToggle();
-        
+    $(".flecha").click(function(e){
+        e.preventDefault();
+        $("ul").slideToggle();    
     });
+    
+    $(".select").prepend("<p>Prueba</p>");
+    
+    
 
     
 });
